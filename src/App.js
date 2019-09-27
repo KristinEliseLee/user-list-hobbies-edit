@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from "react-redux";
 import './App.css';
-import ListView from './views/ListView'
-import DetailView from './views/DetailView'
+import ListView from './Views/ListView'
+import DetailView from './Views/DetailView'
 
  function ConnectedApp(props) {
   if (props.detailView){

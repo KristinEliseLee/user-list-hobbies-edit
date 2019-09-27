@@ -6,7 +6,7 @@ function HobbyForm(props){
   const { handleSubmit } = props
   return (
     <form onSubmit={handleSubmit}>
-      <button type="submit">X</button>
+      <button type="submit">Remove</button>
     </form>
   )
 }
