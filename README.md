@@ -1,10 +1,22 @@
 # Users List and Detail Views App
 
+
 ## General Overview
 
 This app has 2 views - a list view that shows names of teachers and students, and a detail view that shows specific user details and allows editing of their list of hobbies.
 
 This App uses Create-React-App, React-Redux, Redux, Redux-Forms, PropTypes, and Lodash.
+
+Using Redux-forms I have submit validations and form reset after submission.
+
+### to run - 
+after cloning/forking/downloading
+
+in console, in directory:
+`npm install`
+`npm start`
+
+
 
 ### Bug with LastPass browser addon
 
@@ -13,11 +25,9 @@ If submitting the AddHobbyForm with the enter key, the console gives an error fr
 
 ### Personal notes
 
-I used the project to try out a different style of organization, with most files having 1 default export instead of grouping similar functions on the same file. 
+I used the project to try out a different style of organization, with most files having 1 default export instead of grouping similar functions on the same file.
 
-
-
-
+I tried to focus on reuseability - the BasicTable and UnorderedList components being for general use.
 
 # Create React App Generic Readme Below
 
