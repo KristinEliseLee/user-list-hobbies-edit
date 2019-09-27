@@ -1,0 +1,10 @@
+import store from '../store'
+import {changeView} from '../actions'
+
+export default function handleListClick(userType){
+
+  return (userID)=>{
+    store.dispatch(changeView({detailView:true, userType:userType, userID:userID}))
+
+  }
+}
