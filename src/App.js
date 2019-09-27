@@ -7,7 +7,6 @@ import DetailView from './views/DetailView'
  function ConnectedApp(props) {
   if (props.detailView){
     return <DetailView/>
-    return <p> hi </p>
   }
   else {
     return <ListView/>
