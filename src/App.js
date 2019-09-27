@@ -11,7 +11,6 @@ import DetailView from './Views/DetailView'
   else {
     return <ListView/>
   }
-
 }
 
 function mapStateToProps(state) {

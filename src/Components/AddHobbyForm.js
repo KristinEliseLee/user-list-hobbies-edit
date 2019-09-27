@@ -1,6 +1,8 @@
+// Renders a form to add new hobby to current user
 import React from 'react'
-import { Field, reduxForm, SubmissionError } from 'redux-form'
-import handleAddHobby from '../Handlers/handleAddHobby'
+import { Field, reduxForm } from 'redux-form'
+import { PropTypes } from 'prop-types'
+
 
 function renderField({ input, label, type, meta: { touched, error } }){
   return(
@@ -14,41 +16,33 @@ function renderField({ input, label, type, meta: { touched, error } }){
   )
 }
 
-function submit(values) {
-  let error = false
-  if (!values.hobbyName) {
-    error = true
-    throw new SubmissionError({ hobbyName: 'Hobby needs a name', _error: 'Submit failed!' })
-  } 
-  if (!values.numYears) {
-    error = true
-    throw new SubmissionError({ numYears: 'Hobby needs years performed', _error: 'Submit failed!' })
-    
-  } 
-  if (error === false) {
-    handleAddHobby(values)
-  }
-}
-
 function HobbyForm(props){
   const { handleSubmit } = props
   return (
-    <form onSubmit={handleSubmit(submit)}>
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="hobbyName">Hobby Name</label>
-        <Field name="hobbyName" component={renderField} type="text" />
+        <Field name="hobbyName" component={renderField} type="text" required />
       </div>
       <div>
         <label htmlFor="numYears">Years Performed</label>
-        <Field name="numYears" component={renderField} type="number" min="0" max='100' />
+        <Field name="numYears" required component={renderField} type="number" min="0" max='100' />
       </div>
       <button type="submit">Submit</button>
     </form>
   )
 }
 
+HobbyForm.propTypes = {
+  handleSubmit:PropTypes.func.isRequired
+}
+
 const AddHobbyForm = reduxForm({
   form: 'addHobby'
 })(HobbyForm)
+
+AddHobbyForm.propTypes = {
+  onSubmit:PropTypes.func.isRequired
+}
 
  export default AddHobbyForm

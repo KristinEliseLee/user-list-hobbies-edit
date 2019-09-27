@@ -20,3 +20,37 @@
 .App-link {
   color: #09d3ac;
 }
+
+#nav {
+  display:flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+#pageBody {
+  display:flex;
+  flex-direction: column;
+  align-items:stretch;
+}
+#addHobbyForm{
+  margin:auto;
+}
+
+h3{
+  text-align: center
+}
+
+ul{
+  width:50%;
+  margin:auto;
+}
+
+table{
+  border-collapse:collapse;
+  margin:auto;
+  width:50%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}

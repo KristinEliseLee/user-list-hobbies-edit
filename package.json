@@ -7,6 +7,7 @@
     "eslint": "^6.4.0",
     "eslint-plugin-react": "^7.14.3",
     "lodash": "^4.17.15",
+    "proptypes": "^1.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",

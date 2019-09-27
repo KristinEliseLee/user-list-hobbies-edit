@@ -2,18 +2,22 @@ import React from 'react'
 import UnorderedList from '../Components/UnorderedList'
 import handleListClick from '../Handlers/handleListClick'
 import { connect } from "react-redux";
+import { PropTypes } from 'prop-types'
 const _ = require('lodash');
 
 
 function ConnectedListView(props) {
   const teacherClick = handleListClick('teachers')
   const studentClick = handleListClick('students')
-  return (<div>
-    <h3> Teachers </h3>
-    <UnorderedList items={props.teachers} onClick={teacherClick} />
-    <h3> Students </h3>
-    <UnorderedList items={props.students} onClick={studentClick} />
+  return (<div id='pageBody'>
+    <UnorderedList items={props.teachers} onClick={teacherClick} title={'Teachers'} id='teacherList'/>
+    <UnorderedList items={props.students} onClick={studentClick} title={'Students'} id='studentList'/>
     </div>)
+}
+
+ConnectedListView.propTypes = {
+  teachers: PropTypes.arrayOf(PropTypes.array).isRequired,
+  students: PropTypes.arrayOf(PropTypes.array).isRequired
 }
 
 function mapStateToProps(state) {
