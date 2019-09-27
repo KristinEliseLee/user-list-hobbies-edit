@@ -15,6 +15,12 @@ after cloning/forking/downloading
 in console, in directory:
 `npm install`
 `npm start`
+navigate browser to `localhost:3000`
+
+to go to detail view, click on a student or teacher name.
+to go to list view, click the button in the upper right
+to add a hobby, fill out name and num years, and hit submit
+to remove a hobby, click the `remove` button next to the hobby in question.
 
 ### Personal notes
 
