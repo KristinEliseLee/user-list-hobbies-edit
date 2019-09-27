@@ -1,4 +1,4 @@
-// view for user listing
+/* Renders view for showing clickable list of users. */
 
 import React from 'react'
 import UnorderedList from '../Components/UnorderedList'

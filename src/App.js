@@ -1,4 +1,4 @@
-// App renders the current view based on view state
+/* App renders the current view based on view state. */
 
 import React from 'react';
 import { connect } from "react-redux";

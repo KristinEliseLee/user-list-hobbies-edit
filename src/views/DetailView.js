@@ -1,4 +1,4 @@
-// Renders the user detail view, with add hobby form
+/* Renders the user info detail view, with AddHobby form. */
 
 import React from 'react'
 import handleReturnListClick from '../Handlers/handleReturnListClick'

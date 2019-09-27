@@ -1,4 +1,5 @@
-// Renders a basic table element out of an array of arrays of data
+/* Renders a basic table element out of an array of arrays of data and a title. 
+*/
 
 import React from 'react'
 import { PropTypes } from 'prop-types'

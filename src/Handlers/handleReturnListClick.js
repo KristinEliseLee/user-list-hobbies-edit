@@ -1,4 +1,4 @@
-// handles clicking to return to list view
+/* Handles clicking to return to ListView. */
 
 import store from '../store'
 import {changeView} from '../actions'

@@ -1,4 +1,5 @@
-// Renders a form to add new hobby to current user
+/* Renders a form to add new hobby to current user. */
+
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
 import { PropTypes } from 'prop-types'

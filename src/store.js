@@ -1,4 +1,4 @@
-// creates redux store
+/* Creates redux store. */
 
 import { initialState, view, userData } from './reducers'
 import { createStore, combineReducers } from 'redux'

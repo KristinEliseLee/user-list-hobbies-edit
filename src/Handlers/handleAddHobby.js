@@ -1,4 +1,5 @@
-// handles adding new hobby once form has been submitted successfully
+/* Handles adding new hobby once AddHobby form has been submitted successfully.
+*/
 
 import store from '../store'
 import {addHobby} from '../actions'

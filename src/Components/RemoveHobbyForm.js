@@ -1,4 +1,4 @@
-// Renders a button to delete specific hobby
+/* Renders a button to delete a hobby from the hobby table. */
 
 import React from 'react'
 import { reduxForm } from 'redux-form'

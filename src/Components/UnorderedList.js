@@ -1,4 +1,6 @@
-// Renders an unordered list out of an array of arrays, with onClick based on first index of each item
+/* Renders an unordered list out of a title and an array of arrays
+ with onClick function taking on first index of each item. 
+ */
 
 import React from 'react'
 import { PropTypes } from 'prop-types'
