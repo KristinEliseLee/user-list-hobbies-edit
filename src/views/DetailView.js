@@ -11,7 +11,7 @@ const _ = require('lodash');
 
 function ConnectedDetailView(props) {
   return(<React.Fragment>
-  <div id='nav'><p onClick={handleReturnListClick}>Return to List</p></div>
+  <div id='nav'><button onClick={handleReturnListClick}>Return to List</button></div>
   <div id='pageBody'><BasicTable data={props.infoTableData} title='Details' id='detailsTable'/>
   <BasicTable data={props.hobbyTablePlusForm} title='Hobbies' id='hobbiesTable'/>
   <div id='addHobbyForm'><AddHobbyForm onSubmit={handleAddHobbyFormSubmit}/></div>
