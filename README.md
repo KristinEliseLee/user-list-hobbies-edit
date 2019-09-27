@@ -9,6 +9,7 @@ This App uses Create-React-App, React-Redux, Redux, Redux-Forms, PropTypes, and 
 ### Bug with LastPass browser addon
 
 If submitting the AddHobbyForm with the enter key, the console gives an error from `onloadwff.js:71`. After doing some research, I found it comes from having the LastPass addon. I didn't find any easy work-arounds, and the form still submits the information, so fixing it is low priority.
+[more info](https://github.com/KillerCodeMonkey/ngx-quill/issues/351?fbclid=IwAR3sBJ86Jel8VV3pYaaK0iOi5qUoTOSfOMFdiz3A7JIcY6UIAYvslCWWjEI)
 
 ### Personal notes
 
