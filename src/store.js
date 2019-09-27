@@ -1,3 +1,5 @@
+// creates redux store
+
 import { initialState, view, userData } from './reducers'
 import { createStore, combineReducers } from 'redux'
 import { reducer as formReducer } from 'redux-form'

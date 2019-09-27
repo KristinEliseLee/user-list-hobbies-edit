@@ -1,3 +1,5 @@
+// handles clicking the remove button to remove the listed hobby
+
 import store from '../store'
 import {removeHobby} from '../actions'
 

@@ -1,6 +1,5 @@
 // Renders a button to delete specific hobby
 
-
 import React from 'react'
 import { reduxForm } from 'redux-form'
 import { PropTypes } from 'prop-types'

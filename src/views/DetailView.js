@@ -1,3 +1,5 @@
+// Renders the user detail view, with add hobby form
+
 import React from 'react'
 import handleReturnListClick from '../Handlers/handleReturnListClick'
 import { connect } from "react-redux";

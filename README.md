@@ -7,7 +7,7 @@ This app has 2 views - a list view that shows names of teachers and students, an
 
 This App uses Create-React-App, React-Redux, Redux, Redux-Forms, PropTypes, and Lodash.
 
-Using Redux-forms I have submit validations and form reset after submission.
+Using Redux-forms for adding or removing hobbies, there's form submission validation for name and number.
 
 ### to run - 
 after cloning/forking/downloading
@@ -16,18 +16,16 @@ in console, in directory:
 `npm install`
 `npm start`
 
-
-
-### Bug with LastPass browser addon
-
-If submitting the AddHobbyForm with the enter key, the console gives an error from `onloadwff.js:71`. After doing some research, I found it comes from having the LastPass addon. I didn't find any easy work-arounds, and the form still submits the information, so fixing it is low priority.
-[more info](https://github.com/KillerCodeMonkey/ngx-quill/issues/351?fbclid=IwAR3sBJ86Jel8VV3pYaaK0iOi5qUoTOSfOMFdiz3A7JIcY6UIAYvslCWWjEI)
-
 ### Personal notes
 
 I used the project to try out a different style of organization, with most files having 1 default export instead of grouping similar functions on the same file.
 
 I tried to focus on reuseability - the BasicTable and UnorderedList components being for general use.
+
+### Bug with LastPass browser addon
+
+If submitting the AddHobbyForm with the enter key, the console gives an error from `onloadwff.js:71`. After doing some research, I found it comes from having the LastPass addon. I didn't find any easy work-arounds, and the form still submits the information, so fixing it is low priority.
+[more info](https://github.com/KillerCodeMonkey/ngx-quill/issues/351?fbclid=IwAR3sBJ86Jel8VV3pYaaK0iOi5qUoTOSfOMFdiz3A7JIcY6UIAYvslCWWjEI)
 
 # Create React App Generic Readme Below
 

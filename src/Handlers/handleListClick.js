@@ -1,3 +1,5 @@
+// handles switching to detail view by clicking on a list item
+
 import store from '../store'
 import {changeView} from '../actions'
 

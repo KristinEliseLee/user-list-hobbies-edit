@@ -1,3 +1,5 @@
+// view for user listing
+
 import React from 'react'
 import UnorderedList from '../Components/UnorderedList'
 import handleListClick from '../Handlers/handleListClick'

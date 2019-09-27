@@ -1,3 +1,5 @@
+// redux reducers for view and userData
+
 import {ADD_HOBBY, REMOVE_HOBBY, CHANGE_VIEW} from './actions'
 import {teachers, students} from './Data'
 const _ = require('lodash');

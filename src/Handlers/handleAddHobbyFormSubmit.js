@@ -1,3 +1,5 @@
+// validates form at submission
+
 import handleAddHobby from '../Handlers/handleAddHobby'
 import { SubmissionError } from 'redux-form'
 
