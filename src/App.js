@@ -16,7 +16,7 @@ import DetailView from './views/DetailView'
 }
 
 function mapStateToProps(state) {
-  return ({detailView: state.detailView})
+  return ({detailView: state.view.detailView})
 }
 
 const App = connect(mapStateToProps)(ConnectedApp)

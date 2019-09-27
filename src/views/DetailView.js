@@ -19,8 +19,8 @@ function ConnectedDetailView(props) {
 }
 
 function mapStateToProps(state) {
-  const whichUser = state.detailViewUser
-  const user = state[whichUser.userType][whichUser.userID]
+  const whichUser = state.view.detailViewUser
+  const user = state.userData[whichUser.userType][whichUser.userID]
   const infoTableData = _.toPairs(_.omit(user, 'hobbies'))
   const hobbyTableData = _.toPairs(user.hobbies)
 

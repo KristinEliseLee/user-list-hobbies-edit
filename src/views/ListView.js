@@ -17,8 +17,8 @@ function ConnectedListView(props) {
 }
 
 function mapStateToProps(state) {
-  const teachers = state.teachers
-  const students = state.students
+  const teachers = state.userData.teachers
+  const students = state.userData.students
 
   const allTeachers = _.toPairs(teachers).map((item) => [item[0], item[1].firstName + ' ' + item[1].lastName])
   const allStudents = _.toPairs(students).map((item) => [item[0], item[1].firstName + ' ' + item[1].lastName])
